@@ -1,0 +1,15 @@
+D:\C3b_Zabransky\24.4\24.4\bin\Debug\net6.0\24.4.exe
+D:\C3b_Zabransky\24.4\24.4\bin\Debug\net6.0\24.4.deps.json
+D:\C3b_Zabransky\24.4\24.4\bin\Debug\net6.0\24.4.runtimeconfig.json
+D:\C3b_Zabransky\24.4\24.4\bin\Debug\net6.0\24.4.dll
+D:\C3b_Zabransky\24.4\24.4\bin\Debug\net6.0\24.4.pdb
+D:\C3b_Zabransky\24.4\24.4\obj\Debug\net6.0\24.4.csproj.AssemblyReference.cache
+D:\C3b_Zabransky\24.4\24.4\obj\Debug\net6.0\24.4.GeneratedMSBuildEditorConfig.editorconfig
+D:\C3b_Zabransky\24.4\24.4\obj\Debug\net6.0\24.4.AssemblyInfoInputs.cache
+D:\C3b_Zabransky\24.4\24.4\obj\Debug\net6.0\24.4.AssemblyInfo.cs
+D:\C3b_Zabransky\24.4\24.4\obj\Debug\net6.0\24.4.csproj.CoreCompileInputs.cache
+D:\C3b_Zabransky\24.4\24.4\obj\Debug\net6.0\24.4.dll
+D:\C3b_Zabransky\24.4\24.4\obj\Debug\net6.0\refint\24.4.dll
+D:\C3b_Zabransky\24.4\24.4\obj\Debug\net6.0\24.4.pdb
+D:\C3b_Zabransky\24.4\24.4\obj\Debug\net6.0\24.4.genruntimeconfig.cache
+D:\C3b_Zabransky\24.4\24.4\obj\Debug\net6.0\ref\24.4.dll
