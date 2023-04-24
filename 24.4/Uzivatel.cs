@@ -6,18 +6,20 @@ using System.Threading.Tasks;
 
 namespace _24._4
 {
-    public class User
+    public class Uzivatel
     {
+        private int id;
         private string username;
-        private string password;
+        private string pasword;
 
+        public int ID { get { return id; } set { id = value; } }
         public string Username { get { return username; } set { username = value; } }
-        public string Password { get { return password; } set { password = value; } }
+        public string Password { get { return pasword; } set { pasword = value; } }
 
-        public User(string username, string password)
+        public Uzivatel(string username, string pasword)
         {
             this.username = username;
-            this.password = password;
+            this.pasword = pasword;
         }
     }
 }

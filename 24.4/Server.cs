@@ -11,6 +11,7 @@ namespace _24._4
     {
         private TcpListener myServer;
         private bool isRunning;
+        bool connected = false;
 
         public Server(int port)
         {
@@ -37,21 +38,59 @@ namespace _24._4
 
             writer.WriteLine("Byl jsi pripojen");
             writer.Flush();
+            writer.AutoFlush = true;
             bool clientConnect = true;
             string? data = null;
             string? dataRecive = null;
+            
             while (clientConnect)
             {
-                data = reader.ReadLine();
-                data = data.ToLower();
-                if (data == "end")
+                if(connected)
                 {
-                    clientConnect = false;
+                    data = reader.ReadLine();
+                    data = data.ToLower();
+                    switch (data)
+                    {
+                        case "exit":
+                            clientConnect = false;
+                            break;
+                        case "who":
+                            writer.WriteLine(" je pripojen");
+                            break;
+                        case "uptime":
+                            clientConnect = false;
+                            break;
+                        case "stats":
+                            clientConnect = false;
+                            break;
+                        case "last":
+                            clientConnect = false;
+                            break;
+                        case "kvadrat":
+                            clientConnect = false;
+                            break;
+                        case "ohm":
+                            clientConnect = false;
+                            break;
+                    }
+                    dataRecive = data + " prijato";
+                    writer.WriteLine(dataRecive);
+                    writer.Flush();
                 }
+                else
+                {
+                    writer.WriteLine("Zadejte uzivatelske jmeno:");
+                    string uname = reader.ReadLine();
+                    writer.WriteLine("Zadejte heslo:");
+                    string upaswrd = reader.ReadLine();
 
-                dataRecive = data + " prijato";
-                writer.WriteLine(dataRecive);
-                writer.Flush();
+                    Uzivatel u = new Uzivatel(uname, upaswrd);
+                    
+                    if(uname == )
+                    {
+                        connected = true;
+                    }
+                }
             }
             writer.WriteLine("Byl jsi odpojen");
             writer.Flush();
